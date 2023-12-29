@@ -203,3 +203,15 @@ construction_body {
   color: #333;
   z-index: 2;
 }
+
+.responsive-image {
+  max-width: 50%; 
+  height: auto;
+  margin: auto; /*centering*/
+  margin-bottom: 20px; /* Spacing between image and caption*/
+}
+.image-container {
+  max-width: 80%;
+  margin: auto;
+  min-height: 200px;
+}
