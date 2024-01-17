@@ -9,7 +9,7 @@
 }
 
 html {
-  background-color: #B94619;
+  background-color: #121212;
 }
 
 .main {
@@ -24,22 +24,6 @@ html {
 
 .title-2 {
   font-family: "Dionysus" !important;
-}
-
-
-#column {
-  display: block;
-  position: absolute;
-  z-index: -998;
-  top: 200px; /*from 40px*/
-  left: 800px;
-  background-image: url(website-assets/ShorterColumn.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  min-height: 1000px;
-  max-height: 1200px;
-  min-width: 400px;
-  max-width: 500px;
 }
 
 #olive {
@@ -99,31 +83,6 @@ html {
     width: 90%;
     margin-left: 20px;
     margin-right: 20px;
-  }
-  #column {
-    display: none;
-    position: absolute;
-    z-index: -998;
-    top: 20px;
-    right: 0px;
-    width: 30vw;
-    height: 80vh !important;
-    background-image: url(website-assets/ShorterColumn.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  
-
-  #column {
-    position: absolute;
-    z-index: -998;
-    top: 20px;
-    right: -200px;
-    width: 30vw;
-    height: 80vh !important;
-    background-image: url(website-assets/ShorterColumn.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
   }
 }
 
@@ -211,7 +170,78 @@ construction_body {
   margin-bottom: 20px; /* Spacing between image and caption*/
 }
 .image-container {
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
   min-height: 200px;
+}
+.home-container {
+  max-width: 100%;
+  margin-bottom: 20%;
+}
+.nav-container {
+  max-width: 100%;
+  background-color: #213046;
+  height: 35%;
+}
+
+.test-button-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  display: block;
+  /* flex-direction: column; */
+}
+.test-button-group-image {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0; */
+}
+
+.test-panel-button {
+  background: rgb(124, 104, 75);
+  flex: 1;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: auto; /* Push buttons to the right*/
+  font-size: small;
+}
+
+.test-panel-button.active {
+  background: rgb(255, 209, 126);
+  flex: 1;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: auto; /* Push buttons to the right*/
+  font-size: small;
+}
+
+.test-profile-container {
+  max-width: 100%;
+  height: 50%;
+  display: flex;
+  position: relative;
+}
+
+.test_overlay {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  /* display: flex;
+  flex-direction: column; Align items in a column */
+}
+
+.test-image-placeholder {
+  flex-basis: 70%; /* Take up 70% of the container */
+  display: flex;
+}
+
+.test-image-placeholder img {
+  width: 100%;
+  height: 100%; /* Adjust the height as needed */
+  object-fit: cover;
 }
