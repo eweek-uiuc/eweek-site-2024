@@ -108,7 +108,7 @@ construction_body {
 .home-container {
   min-height: calc(120vh - 20px);
   margin-bottom: 10%;
-  background-image: url(website-assets/2024Homepage.png);
+  background-image: url("website-assets/2024Homepage.png");
   background-position: 65% 50%;
   background-repeat: no-repeat;
   background-size: cover;
