@@ -35,3 +35,11 @@ function activeButton(clickedButton) {
 
   clickedButton.classList.add('active');
 }
+
+window.addEventListener('orientationchange', function(event) {
+  if (event.target.screen.orientation.type === 'portrait-primary') {
+    document.getElementById('mobile-orientation-prompt').style.display = 'block';
+  } else {
+    document.getElementById('mobile-orientation-prompt').style.display = 'none';
+  }
+});
